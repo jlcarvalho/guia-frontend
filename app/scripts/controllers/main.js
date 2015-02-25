@@ -14,7 +14,7 @@ angular.module('trackApp')
     $scope.getTime = getTime;
 
     (function(){
-        $http.get('/scripts/data.json').
+        $http.get('scripts/data.json').
             success(function(data) {
                 console.dir(data);
                 $scope.resources = _.sortByAll(data.resources, ['section', '_id']);
