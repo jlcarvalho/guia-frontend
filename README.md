@@ -14,6 +14,8 @@ semelhante as tracks do [bento.io](https://www.bento.io/tracks).
 - [ ] Exibir as seções
 - [ ] Exibir tipos dos recursos
 - [ ] Adicionar descrição aos recursos
+- [ ] Integrar com redes sociais
+- [ ] Salvar e exibir progresso do usuário
 
 ### Sources
 [Timeline](http://codepen.io/NilsWe/pen/FemfK/)
