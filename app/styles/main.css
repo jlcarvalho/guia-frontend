@@ -18,6 +18,10 @@ h1, h2 {
   text-align: center;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 .container {
   max-width: 660px;
   margin:0 auto;
