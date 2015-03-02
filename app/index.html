@@ -26,7 +26,7 @@
     <!-- Add your site or application content here -->
     <div class="container" ng-controller="MainCtrl">
       <h1>guia frontend em português</h1>
-      <ul class="timeline" ng-if="resources.length > 0">
+      <ul class="timeline" ng-if="resources.length > 0" ng-cloak>
 
         <li ng-repeat="resource in resources">
           <div ng-class="resource.section % 2 === 0 ? 'direction-r' : 'direction-l'">
