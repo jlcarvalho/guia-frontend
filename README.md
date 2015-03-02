@@ -11,7 +11,7 @@ semelhante as tracks do [bento.io](https://www.bento.io/tracks).
 ### To-Do
 - [x] Criar guia
 - [x] Organizar recursos de acordo com as seções
-- [ ] Exibir as seções
+- [x] Exibir as seções
 - [ ] Exibir tipos dos recursos
 - [ ] Adicionar descrição aos recursos
 - [ ] Integrar com redes sociais

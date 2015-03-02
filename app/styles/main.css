@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
@@ -22,6 +22,10 @@ h1 {
   max-width: 660px;
   margin:0 auto;
   padding: 50px;
+}
+
+.container > h1 {
+  margin-bottom: 100px;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -143,7 +147,6 @@ h1 {
 .timeline {
   position: relative;
   width: 100%;
-  margin-top: 50px;
   padding: 1em 0;
   list-style-type: none;
 }
@@ -343,7 +346,7 @@ h1 {
 
 .timeline {
   width: 100%;
-  padding: 4em 0 1em 0;
+  padding: 4em 0 4em 0;
 }
 
 .timeline li {

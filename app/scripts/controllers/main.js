@@ -27,7 +27,13 @@ angular.module('trackApp')
                     }
                     return resource;
                 });
-                $scope.resources = _.sortByAll(data.resources, ['section', '_id']);                
+
+                data.sections = _.map(data.sections, function(section){
+                    section.resources = _.where(data.resources, {'section': section._id});
+                    return section;
+                });
+
+                $scope.sections = data.sections;
             })
     }())
     

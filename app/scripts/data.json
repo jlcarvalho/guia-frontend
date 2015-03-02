@@ -63,17 +63,17 @@
             "categories": [2, 3]
         },
         {
-            "_id": 10,
+            "_id": 9,
             "name": "jQuery",
             "categories": [4]
         },
         {
-            "_id": 11,
+            "_id": 10,
             "name": "Trabalhando com Javascript",
             "categories": [4]
         },
         {
-            "_id": 12,
+            "_id": 11,
             "name": "Git",
             "categories": [5]
         }
