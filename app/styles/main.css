@@ -135,7 +135,7 @@ h1 {
   -moz-animation: check 0.8s;
   -o-animation: check 0.8s;
   animation: check 0.8s;
-  border-color: rgba(255,80,80,1);
+  border-color: #34b93d;
 }
 
 /* ================ The Timeline ================ */
