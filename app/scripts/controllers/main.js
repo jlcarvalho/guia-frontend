@@ -8,16 +8,26 @@
  * Controller of the trackApp
  */
 angular.module('trackApp')
-  .controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
+  .controller('MainCtrl', ['$scope', '$http', '$localStorage', function ($scope, $http, $localStorage) {
     $scope.resources = [];
 
     $scope.getTime = getTime;
+    $scope.changeResource = changeResource;
 
     (function(){
+        if(!angular.isDefined($localStorage.done)) {
+            $localStorage.done = [];
+        }
+        
         $http.get('scripts/data.json').
             success(function(data) {
-                console.dir(data);
-                $scope.resources = _.sortByAll(data.resources, ['section', '_id']);
+                var dones = _.map(data.resources, function(resource){
+                    if(_.includes($localStorage.done, resource._id)) {
+                        resource.checked = true;
+                    }
+                    return resource;
+                });
+                $scope.resources = _.sortByAll(data.resources, ['section', '_id']);                
             })
     }())
     
@@ -41,5 +51,14 @@ angular.module('trackApp')
             output += minutes + ' minutos';
         }
         return output;
+    }
+
+    function changeResource(r){
+        var index = $localStorage.done.indexOf(r._id);
+        if(!r.checked && index === -1){
+            $localStorage.done.push(r._id);
+        } else {
+            $localStorage.done.splice(index, 1);
+        }
     }
   }]);

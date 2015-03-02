@@ -26,14 +26,20 @@
     <!-- Add your site or application content here -->
     <div class="container" ng-controller="MainCtrl">
       <h1>guia frontend em português</h1>
-      <ul class="timeline">
+      <ul class="timeline" ng-if="resources.length > 0">
 
         <li ng-repeat="resource in resources">
           <div ng-class="resource.section % 2 === 0 ? 'direction-r' : 'direction-l'">
-            <a ng-href="{{resource.url}}" ng-title="{{resource.title}}" class="flag-wrapper">
-              <span class="flag" ng-bind="resource.title"></span>
+            <div class="flag-wrapper">
+              <div class="flag">
+                <div class="checkbox">
+                  <input type="checkbox" id="{{::resource._id}}" name="{{::resource._id}}" ng-model="resource.checked"/>
+                  <label for="{{::resource._id}}" ng-click="changeResource(resource)"></label>
+                </div>
+                <a class="title" ng-href="{{::resource.url}}" ng-title="{{::resource.title}}" target="_blank">{{::resource.title}}</a>
+              </div>
               <span class="time-wrapper"><span class="time" ng-bind="getTime(resource.duration)"></span></span>
-            </a>
+            </div>
             <!--<div class="desc"></div>-->
           </div>
         </li>
@@ -67,6 +73,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
