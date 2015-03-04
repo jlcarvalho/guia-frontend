@@ -9,6 +9,7 @@ body {
   line-height: 1.6em;
 
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -33,8 +34,6 @@ p {
 
 header {
   background: url(../images/bg640.png) no-repeat center center;
-  -webkit-background-size: cover;
-  background-size: cover;
   color: white;
 }
 
