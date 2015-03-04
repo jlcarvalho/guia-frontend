@@ -34,6 +34,8 @@ p {
 
 header {
   background: url(../images/bg640.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: white;
 }
 
