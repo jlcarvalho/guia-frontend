@@ -494,7 +494,7 @@
             "url": "http://loopinfinito.com.br/2013/06/18/json-de-gambiarra-a-padrao/"
         },
         {
-            "_id": 47,
+            "_id": 48,
             "duration": 11,
             "section": 10,
             "title": "Javascript Idiomático",
@@ -502,7 +502,7 @@
             "url": "http://setemasters.imasters.com.br/conversas/javascript-idiomatico/"
         },
         {
-            "_id": 48,
+            "_id": 49,
             "duration": 38,
             "section": 10,
             "title": "Arquitetura de Javascript Modular e Event-Driven",
@@ -510,7 +510,7 @@
             "url": "https://www.eventials.com/locaweb/arquitetura-de-javascript-modular-e-event-driven/"
         },
         {
-            "_id": 49,
+            "_id": 50,
             "duration": 43,
             "section": 10,
             "title": "O fantástico mundo do JavaScript",
@@ -518,7 +518,7 @@
             "url": "https://www.youtube.com/watch?v=Zn7B-X0y5qs"
         },
         {
-            "_id": 50,
+            "_id": 51,
             "duration": 20,
             "section": 11,
             "title": "git - guia prático",
@@ -526,7 +526,7 @@
             "url": "http://rogerdudler.github.io/git-guide/index.pt_BR.html"
         },
         {
-            "_id": 51,
+            "_id": 52,
             "duration": 40,
             "section": 11,
             "title": "Git e Github para iniciantes",
