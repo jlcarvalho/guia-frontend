@@ -1,537 +1,488 @@
-{
-    "categories": [
-        {
-            "_id": 1,
-            "name": "Fundamentos"
-        },
-        {
-            "_id": 2,
-            "name": "HTML"
-        },
-        {
-            "_id": 3,
-            "name": "CSS"
-        },
-        {
-            "_id": 4,
-            "name": "Javascript"
-        },
-        {
-            "_id": 5,
-            "name": "Git"
-        }
-    ],
-    "sections": [
-        {
-            "_id": 1,
-            "name": "A internet",
-            "categories": [1]
-        },
-        {
-            "_id": 2,
-            "name": "Funcionamento das aplicações web",
-            "categories": [1]
-        },
-        {
-            "_id": 3,
-            "name": "Aprendendo a programar",
-            "categories": [1]
-        },
-        {
-            "_id": 4,
-            "name": "HTML e CSS",
-            "categories": [2, 3]
-        },
-        {
-            "_id": 5,
-            "name": "Web Design Responsivo",
-            "categories": [2, 3]
-        },
-        {
-            "_id": 6,
-            "name": "Otimização CSS",
-            "categories": [3]
-        },
-        {
-            "_id": 7,
-            "name": "Introdução ao Javascript",
-            "categories": [4]
-        },
-        {
-            "_id": 8,
-            "name": "Workflow",
-            "categories": [2, 3]
-        },
-        {
-            "_id": 9,
-            "name": "jQuery",
-            "categories": [4]
-        },
-        {
-            "_id": 10,
-            "name": "Trabalhando com Javascript",
-            "categories": [4]
-        },
-        {
-            "_id": 11,
-            "name": "Git",
-            "categories": [5]
-        }
-    ],
-    "type": [
-        {
-            "_id": 1,
-            "name": "Audio"
-        },
-        {
-            "_id": 2,
-            "name": "Vídeo"
-        },
-        {
-            "_id": 3,
-            "name": "Artigo"
-        },
-        {
-            "_id": 4,
-            "name": "Curso"
-        },
-        {
-            "_id": 5,
-            "name": "Slides"
-        },
-        {
-            "_id": 6,
-            "name": "Livro"
-        },
-        {
-            "_id": 7,
-            "name": "Apostila"
-        },
-        {
-            "_id": 8,
-            "name": "Website"
-        },
-        {
-            "_id": 9,
-            "name": "Imagem"
-        }
-    ],
-    "resources": [
-        {
-            "_id": 1,
-            "duration": 8,
-            "section": 1,
-            "title": "História da internet",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=9hIQjrMHTv4"
-        },
-        {
-            "_id": 2,
-            "duration": 12,
-            "section": 1,
-            "title": "O que é a internet?",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=XE_FPEFpHt4"
-        },
-        {
-            "_id": 3,
-            "duration": 6,
-            "section": 1,
-            "title": "Como funciona a Internet? Parte 1: O protocolo IP",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=HNQD0qJ0TC4"
-        },
-        {
-            "_id": 4,
-            "duration": 7,
-            "section": 1,
-            "title": "Como funciona a Internet? Parte 2: Sistemas Autônomos, BGP, PTTs.",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=C5qNAT_j63M"
-        },
-        {
-            "_id": 5,
-            "duration": 7,
-            "section": 1,
-            "title": "Como funciona a Internet? Parte 3: DNS",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=ACGuo26MswI"
-        },
-        {
-            "_id": 6,
-            "duration": 7,
-            "section": 1,
-            "title": "Como funciona a Internet? Parte 4: Governança da Internet",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=ZYsjMEISR6E"
-        },
-        {
-            "_id": 7,
-            "duration": 60,
-            "section": 2,
-            "title": "20 lições que aprendi sobre navegadores e a web",
-            "type": 8,
-            "url": "http://www.20thingsilearned.com/pt-BR"
-        },
-        {
-            "_id": 8,
-            "duration": 6,
-            "section": 3,
-            "title": "What Most Schools Don't Teach",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=nKIu9yen5nc"
-        },
-        {
-            "_id": 9,
-            "duration": 60,
-            "section": 3,
-            "title": "Hora do código",
-            "type": 4,
-            "url": "http://studio.code.org/hoc/1"
-        },
-        {
-            "_id": 10,
-            "duration": 420,
-            "section": 4,
-            "title": "CodeCademy - HTML & CSS",
-            "type": 4,
-            "url": "http://www.codecademy.com/pt-BR/tracks/web"
-        },
-        {
-            "_id": 11,
-            "duration": 60,
-            "section": 4,
-            "title": "Aprenda layout com css",
-            "type": 8,
-            "url": "http://pt-br.learnlayout.com/"
-        },
-        {
-            "_id": 12,
-            "duration": 60,
-            "section": 4,
-            "title": "Guia de código do @mdo",
-            "type": 8,
-            "url": "http://diegoeis.github.io/code-guide/"
-        },
-        {
-            "_id": 13,
-            "duration": 20,
-            "section": 4,
-            "title": "Tableless Iniciantes - O básico",
-            "type": 8,
-            "url": "http://tableless.github.io/iniciantes/manual/obasico/"
-        },
-        {
-            "_id": 14,
-            "duration": 60,
-            "section": 4,
-            "title": "Tableless Iniciantes - HTML",
-            "type": 8,
-            "url": "http://tableless.github.io/iniciantes/manual/html/"
-        },
-        {
-            "_id": 15,
-            "duration": 180,
-            "section": 4,
-            "title": "Tableless Iniciantes - CSS",
-            "type": 8,
-            "url": "http://tableless.github.io/iniciantes/manual/css/"
-        },
-        {
-            "_id": 16,
-            "duration": 30,
-            "section": 4,
-            "title": "Efeito cascata, herança e especificidade do CSS",
-            "type": 3,
-            "url": "http://tableless.com.br/efeito-cascata-e-especificidade-do-css/"
-        },
-        {
-            "_id": 17,
-            "duration": 20,
-            "section": 4,
-            "title": "Tenha o DOM",
-            "type": 3,
-            "url": "http://tableless.com.br/tenha-o-dom/"
-        },
-        {
-            "_id": 18,
-            "duration": 17,
-            "section": 5,
-            "title": "Introdução ao Responsive Web Design",
-            "type": 3,
-            "url": "http://tableless.com.br/introducao-ao-responsive-web-design/"
-        },
-        {
-            "_id": 19,
-            "duration": 60,
-            "section": 5,
-            "title": "O Cenário do Web Design Responsivo",
-            "type": 3,
-            "url": "http://tableless.com.br/o-cenario-do-web-design-responsivo/"
-        },
-        {
-            "_id": 20,
-            "duration": 20,
-            "section": 5,
-            "title": "Design Responsivo II – Grids e Texto",
-            "type": 3,
-            "url": "http://blog.popupdesign.com.br/design-responsivo-grids-e-texto/"
-        },
-        {
-            "_id": 21,
-            "duration": 30,
-            "section": 5,
-            "title": "Design Responsivo III – Media Queries e Compatibilidade",
-            "type": 3,
-            "url": "http://blog.popupdesign.com.br/design-responsivo-iii-media-queries-e-compatibilidade/"
-        },
-        {
-            "_id": 22,
-            "duration": 20,
-            "section": 5,
-            "title": "Desenvolvimento Responsivo e Viewport",
-            "type": 3,
-            "url": "http://blog.popupdesign.com.br/desenvolvimento-responsivo-e-viewport/"
-        },
-        {
-            "_id": 23,
-            "duration": 30,
-            "section": 5,
-            "title": "Flexbox – Organizando seu layout",
-            "type": 3,
-            "url": "http://tableless.com.br/flexbox-organizando-seu-layout/"
-        },
-        {
-            "_id": 24,
-            "duration": 10,
-            "section": 5,
-            "title": "Qual unidade utilizar – Pixel, EM ou REM",
-            "type": 3,
-            "url": "http://tableless.com.br/unidade-pixels-em-rem/"
-        },
-        {
-            "_id": 25,
-            "duration": 15,
-            "section": 5,
-            "title": "Dicas de CSS para impressão",
-            "type": 3,
-            "url": "http://tableless.com.br/dicas-de-css-para-impressao/"
-        },
-        {
-            "_id": 26,
-            "duration": 15,
-            "section": 6,
-            "title": "Entendendo o Reflow",
-            "type": 3,
-            "url": "http://tableless.com.br/entendendo-os-reflows-2/"
-        },
-        {
-            "_id": 27,
-            "duration": 15,
-            "section": 6,
-            "title": "Performance do seu CSS",
-            "type": 3,
-            "url": "http://tableless.com.br/melhorando-performance-css/"
-        },
-        {
-            "_id": 28,
-            "duration": 600,
-            "section": 7,
-            "title": "Codecademy - Javascript",
-            "type": 4,
-            "url": "http://www.codecademy.com/pt-BR/tracks/javascript"
-        },
-        {
-            "_id": 29,
-            "duration": 60,
-            "section": 7,
-            "title": "Tableless Iniciantes - Javascript",
-            "type": 8,
-            "url": "http://tableless.github.io/iniciantes/manual/js/"
-        },
-        {
-            "_id": 30,
-            "duration": 20,
-            "section": 7,
-            "title": "24 Boas Práticas no JavaScript para Iniciantes",
-            "type": 3,
-            "url": "http://code.tutsplus.com/pt/tutorials/24-javascript-best-practices-for-beginners--net-5399"
-        },
-        {
-            "_id": 31,
-            "duration": 15,
-            "section": 7,
-            "title": "JavaScript Strict Mode",
-            "type": 3,
-            "url": "http://loopinfinito.com.br/2013/07/16/javascript-strict-mode/"
-        },
-        {
-            "_id": 32,
-            "duration": 120,
-            "section": 8,
-            "title": "HTML semântico e posicionamento no CSS",
-            "type": 7,
-            "url": "http://www.caelum.com.br/apostila-html-css-javascript/html-semantico-e-posicionamento-no-css/#3-6-estilizacao-com-classes"
-        },
-        {
-            "_id": 33,
-            "duration": 30,
-            "section": 8,
-            "title": "OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?",
-            "type": 3,
-            "url": "http://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/"
-        },
-        {
-            "_id": 34,
-            "duration": 30,
-            "section": 8,
-            "title": "Falando em organização CSS...",
-            "type": 3,
-            "url": "http://www.felipefialho.com/blog/2014/falando-em-organizacao-css/"
-        },
-        {
-            "_id": 35,
-            "duration": 30,
-            "section": 8,
-            "title": "Bye Zen Coding, Bem-vindo Emmet!",
-            "type": 3,
-            "url": "http://www.felipefialho.com/blog/2014/falando-em-organizacao-css/"
-        },
-        {
-            "_id": 36,
-            "duration": 30,
-            "section": 8,
-            "title": "Segredos do Chrome DevTools",
-            "type": 2,
-            "url": "http://zenorocha.com/devtools-series/"
-        },
-        {
-            "_id": 37,
-            "duration": 180,
-            "section": 9,
-            "title": "Codecademy - jQuery",
-            "type": 4,
-            "url": "http://www.codecademy.com/pt-BR/tracks/jquery"
-        },
-        {
-            "_id": 38,
-            "duration": 20,
-            "section": 9,
-            "title": "Entendendo captura e propagação de eventos",
-            "type": 3,
-            "url": "http://loopinfinito.com.br/2013/05/14/entendendo-captura-e-propagacao-de-eventos/"
-        },
-        {
-            "_id": 39,
-            "duration": 10,
-            "section": 9,
-            "title": "Muito além do jQuery",
-            "type": 3,
-            "url": "http://frontinbrazil.com.br/muito-alem-do-jquery/"
-        },
-        {
-            "_id": 40,
-            "duration": 20,
-            "section": 9,
-            "title": "O hype sobre não utilizar jQuery",
-            "type": 3,
-            "url": "http://leobalter.github.io/pt-br/jquery/2014/02/19/o-hype-sobre-na%CC%83o-utilizar-jquery.html"
-        },
-        {
-            "_id": 41,
-            "duration": 30,
-            "section": 9,
-            "title": "Tudo que você gostaria de saber sobre plugins jQuery e ninguém teve paciência de explicar",
-            "type": 3,
-            "url": "http://tableless.com.br/tudo-que-voce-gostaria-de-saber-sobre-plugins-jquery-e-ninguem-teve-paciencia-de-explicar/"
-        },
-        {
-            "_id": 42,
-            "duration": 20,
-            "section": 10,
-            "title": "Entendendo o this",
-            "type": 3,
-            "url": "http://tableless.com.br/javascript-entendendo-o-this/"
-        },
-        {
-            "_id": 43,
-            "duration": 10,
-            "section": 10,
-            "title": "JavaScript: Objetos Literais vs. Funções Construtoras",
-            "type": 3,
-            "url": "http://tableless.com.br/javascript-objetos-literais-vs-funcoes-construtoras/"
-        },
-        {
-            "_id": 44,
-            "duration": 30,
-            "section": 10,
-            "title": "Modularização em Javascript",
-            "type": 3,
-            "url": "http://tableless.com.br/modularizacao-em-javascript/"
-        },
-        {
-            "_id": 45,
-            "duration": 20,
-            "section": 10,
-            "title": "Dominando o uso de prototype em JavaScript",
-            "type": 3,
-            "url": "http://tableless.com.br/dominando-o-uso-de-prototype-em-javascript/"
-        },
-        {
-            "_id": 46,
-            "duration": 10,
-            "section": 10,
-            "title": "Assegurando a qualidade do seu código JavaScript",
-            "type": 3,
-            "url": "http://tableless.com.br/qualidade-codigo-javascript/"
-        },
-        {
-            "_id": 47,
-            "duration": 15,
-            "section": 10,
-            "title": "JSON, de gambiarra a padrão",
-            "type": 3,
-            "url": "http://loopinfinito.com.br/2013/06/18/json-de-gambiarra-a-padrao/"
-        },
-        {
-            "_id": 47,
-            "duration": 11,
-            "section": 10,
-            "title": "Javascript Idiomático",
-            "type": 2,
-            "url": "http://setemasters.imasters.com.br/conversas/javascript-idiomatico/"
-        },
-        {
-            "_id": 48,
-            "duration": 38,
-            "section": 10,
-            "title": "Arquitetura de Javascript Modular e Event-Driven",
-            "type": 2,
-            "url": "https://www.eventials.com/locaweb/arquitetura-de-javascript-modular-e-event-driven/"
-        },
-        {
-            "_id": 49,
-            "duration": 43,
-            "section": 10,
-            "title": "O fantástico mundo do JavaScript",
-            "type": 2,
-            "url": "https://www.youtube.com/watch?v=Zn7B-X0y5qs"
-        },
-        {
-            "_id": 50,
-            "duration": 20,
-            "section": 11,
-            "title": "git - guia prático",
-            "type": 8,
-            "url": "http://rogerdudler.github.io/git-guide/index.pt_BR.html"
-        },
-        {
-            "_id": 51,
-            "duration": 40,
-            "section": 11,
-            "title": "Git e Github para iniciantes",
-            "type": 8,
-            "url": "https://www.youtube.com/watch?v=UMhskLXJuq4"
-        }
+[
+  {
+    "slug": "web",
+    "name": "A internet",
+    "tags": ["fundamentos"],
+    "description": "Como a web funciona",
+    "before": [],
+    "after": ["webapps"],
+    "home": "",
+    "links": [
+      {
+        "name": "História da internet",
+        "duration": 8,
+        "level": 0,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=9hIQjrMHTv4"
+      },
+      {
+        "name": "O que é a internet?",
+        "duration": 12,
+        "level": 0,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=XE_FPEFpHt4"
+      },
+      {
+        "name": "Como funciona a Internet? Parte 1: O protocolo IP",
+        "duration": 6,
+        "level": 0,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=HNQD0qJ0TC4"
+      },
+      {
+        "name": "Como funciona a Internet? Parte 2: Sistemas Autônomos, BGP, PTTs.",
+        "duration": 7,
+        "level": 0,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=C5qNAT_j63M"
+      },
+      {
+        "name": "Como funciona a Internet? Parte 3: DNS",
+        "duration": 7,
+        "level": 0,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=ACGuo26MswI"
+      },
+      {
+        "name": "Como funciona a Internet? Parte 4: Governança da Internet",
+        "duration": 7,
+        "level": 0,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=ZYsjMEISR6E"
+      }
     ]
-}
+  },
+  {
+    "slug": "webapps",
+    "name": "Funcionamento das aplicações web",
+    "tags": ["fundamentos"],
+    "description": "Como as aplicações web funcionam",
+    "before": ["web"],
+    "after": ["logica"],
+    "home": "",
+    "links": [
+      {
+        "name": "20 lições que aprendi sobre navegadores e a web",
+        "duration": 60,
+        "level": 0,
+        "type": "Website",
+        "url": "http://www.20thingsilearned.com/pt-BR"
+      }
+    ]
+  },
+  {
+    "slug": "logica",
+    "name": "Aprendendo a programar",
+    "tags": ["fundamentos"],
+    "description": "Descobrindo a lógica de programação",
+    "before": ["webapps"],
+    "after": ["htmlecss", "javascript"],
+    "home": "",
+    "links": [
+      {
+        "name": "What Most Schools Don't Teach",
+        "duration": 6,
+        "level": 0,
+        "subtitle": true,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=nKIu9yen5nc"
+      },
+      {
+        "name": "Hora do código",
+        "duration": 60,
+        "level": 0,
+        "type": "Curso",
+        "url": "http://studio.code.org/hoc/1"
+      }
+    ]
+  },
+  {
+    "slug": "htmlecss",
+    "name": "HTML e CSS",
+    "tags": ["html", "css"],
+    "description": "Descobrindo a lógica de programação",
+    "before": ["logica"],
+    "after": ["webdesign", "javascript"],
+    "home": "",
+    "links": [
+      {
+        "name": "CodeCademy - HTML & CSS",
+        "duration": 420,
+        "level": 0,
+        "type": "Curso",
+        "url": "http://www.codecademy.com/pt-BR/tracks/web"
+      },
+      {
+        "name": "Aprenda layout com css",
+        "duration": 60,
+        "level": 0,
+        "type": "Website",
+        "url": "http://pt-br.learnlayout.com/"
+      },
+      {
+        "name": "Guia de código do @mdo",
+        "duration": 60,
+        "level": 0,
+        "type": "Website",
+        "url": "http://diegoeis.github.io/code-guide/"
+      },
+      {
+        "name": "Tableless Iniciantes - O básico",
+        "duration": 20,
+        "level": 0,
+        "type": "Website",
+        "url": "http://tableless.github.io/iniciantes/manual/obasico/"
+      },
+      {
+        "name": "Tableless Iniciantes - HTML",
+        "duration": 60,
+        "level": 0,
+        "type": "Website",
+        "url": "http://tableless.github.io/iniciantes/manual/html/"
+      },
+      {
+        "name": "Tableless Iniciantes - CSS",
+        "duration": 180,
+        "level": 0,
+        "type": "Website",
+        "url": "http://tableless.github.io/iniciantes/manual/css/"
+      },
+      {
+        "name": "Efeito cascata, herança e especificidade do CSS",
+        "duration": 30,
+        "level": 0,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/efeito-cascata-e-especificidade-do-css/"
+      },
+      {
+        "name": "Tenha o DOM",
+        "duration": 20,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/tenha-o-dom/"
+      }
+    ]
+  },
+  {
+    "slug": "webdesign",
+    "name": "Web Design Responsivo",
+    "tags": ["html", "css"],
+    "description": "Criando sites que funcionam em qualquer dispositivo",
+    "before": ["htmlecss"],
+    "after": ["otimizacaocss"],
+    "home": "",
+    "links": [
+      {
+        "name": "Introdução ao Responsive Web Design",
+        "duration": 17,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/introducao-ao-responsive-web-design/"
+      },
+      {
+        "name": "O Cenário do Web Design Responsivo",
+        "duration": 60,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/o-cenario-do-web-design-responsivo/"
+      },
+      {
+        "name": "Design Responsivo II – Grids e Texto",
+        "duration": 20,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://blog.popupdesign.com.br/design-responsivo-grids-e-texto/"
+      },
+      {
+        "name": "Design Responsivo III – Media Queries e Compatibilidade",
+        "duration": 30,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://blog.popupdesign.com.br/design-responsivo-iii-media-queries-e-compatibilidade/"
+      },
+      {
+        "name": "Desenvolvimento Responsivo e Viewport",
+        "duration": 20,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://blog.popupdesign.com.br/desenvolvimento-responsivo-e-viewport/"
+      },
+      {
+        "name": "Flexbox – Organizando seu layout",
+        "duration": 30,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/flexbox-organizando-seu-layout/"
+      },
+      {
+        "name": "Qual unidade utilizar – Pixel, EM ou REM",
+        "duration": 10,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/unidade-pixels-em-rem/"
+      },
+      {
+        "name": "Dicas de CSS para impressão",
+        "duration": 15,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/dicas-de-css-para-impressao/"
+      }
+    ]
+  },
+  {
+    "slug": "otimizacaocss",
+    "name": "Otimização CSS",
+    "tags": ["css"],
+    "description": "Extraindo o máximo de sua CSS",
+    "before": ["webdesign"],
+    "after": ["javascript", "workflow"],
+    "home": "",
+    "links": [
+      {
+        "name": "Entendendo o Reflow",
+        "duration": 15,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/entendendo-os-reflows-2/"
+      },
+      {
+        "name": "Performance do seu CSS",
+        "duration": 15,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/melhorando-performance-css/"
+      }
+    ]
+  },
+  {
+    "slug": "javascript",
+    "name": "Javascript",
+    "tags": ["javascript"],
+    "description": "Deixando suas páginas web mais dinâmicas",
+    "before": ["logica", "htmlecss"],
+    "after": ["workflow", "jquery", "jsintermediario"],
+    "home": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "links": [
+      {
+        "name": "Codecademy - Javascript",
+        "duration": 600,
+        "level": 1,
+        "type": "Curso",
+        "url": "http://www.codecademy.com/pt-BR/tracks/javascript"
+      },
+      {
+        "name": "Tableless Iniciantes - Javascript",
+        "duration": 60,
+        "level": 1,
+        "type": "Website",
+        "url": "http://tableless.github.io/iniciantes/manual/js/"
+      },
+      {
+        "name": "24 Boas Práticas no JavaScript para Iniciantes",
+        "duration": 20,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://code.tutsplus.com/pt/tutorials/24-javascript-best-practices-for-beginners--net-5399"
+      },
+      {
+        "name": "JavaScript Strict Mode",
+        "duration": 15,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://loopinfinito.com.br/2013/07/16/javascript-strict-mode/"
+      }
+    ]
+  },
+  {
+    "slug": "workflow",
+    "name": "Workflow",
+    "tags": ["html", "css", "javascript"],
+    "description": "Utilizando técnicas e ferramentas para auxiliar no desenvolvimento",
+    "before": ["webdesign", "javascript"],
+    "after": ["git"],
+    "home": "",
+    "links": [
+      {
+        "name": "HTML semântico e posicionamento no CSS",
+        "duration": 120,
+        "level": 1,
+        "type": "Apostila",
+        "url": "http://www.caelum.com.br/apostila-html-css-javascript/html-semantico-e-posicionamento-no-css/#3-6-estilizacao-com-classes"
+      },
+      {
+        "name": "OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?",
+        "duration": 30,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/"
+      },
+      {
+        "name": "Falando em organização CSS...",
+        "duration": 30,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://www.felipefialho.com/blog/2014/falando-em-organizacao-css/"
+      },
+      {
+        "name": "Bye Zen Coding, Bem-vindo Emmet!",
+        "duration": 30,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://www.felipefialho.com/blog/2014/falando-em-organizacao-css/"
+      },
+      {
+        "name": "Segredos do Chrome DevTools",
+        "duration": 30,
+        "level": 2,
+        "type": "Vídeo",
+        "url": "http://zenorocha.com/devtools-series/"
+      }
+    ]
+  },
+  {
+    "slug": "jquery",
+    "name": "jQuery",
+    "tags": ["javascript"],
+    "description": "Uma das bibliotecas javascript mais utilizadas de todos os tempos",
+    "before": ["javascript"],
+    "after": ["jsintermediario"],
+    "home": "https://jquery.com/",
+    "links": [
+      {
+        "name": "Codecademy - jQuery",
+        "duration": 180,
+        "level": 1,
+        "type": "Curso",
+        "url": "http://www.codecademy.com/pt-BR/tracks/jquery"
+      },
+      {
+        "name": "Entendendo captura e propagação de eventos",
+        "duration": 20,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://loopinfinito.com.br/2013/05/14/entendendo-captura-e-propagacao-de-eventos/"
+      },
+      {
+        "name": "Muito além do jQuery",
+        "duration": 10,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://frontinbrazil.com.br/muito-alem-do-jquery/"
+      },
+      {
+        "name": "O hype sobre não utilizar jQuery",
+        "duration": 20,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://leobalter.github.io/pt-br/jquery/2014/02/19/o-hype-sobre-na%CC%83o-utilizar-jquery.html"
+      },
+      {
+        "name": "Tudo que você gostaria de saber sobre plugins jQuery e ninguém teve paciência de explicar",
+        "duration": 30,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/tudo-que-voce-gostaria-de-saber-sobre-plugins-jquery-e-ninguem-teve-paciencia-de-explicar/"
+      }
+    ]
+  },
+  {
+    "slug": "jsintermediario",
+    "name": "Trabalhando com Javascript",
+    "tags": ["javascript"],
+    "description": "Aprofundando no mundo do Javascript",
+    "before": ["javascript", "jquery"],
+    "after": ["git"],
+    "home": "",
+    "links": [
+      {
+        "name": "Entendendo o this",
+        "duration": 20,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/javascript-entendendo-o-this/"
+      },
+      {
+        "name": "JavaScript: Objetos Literais vs. Funções Construtoras",
+        "duration": 10,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/javascript-objetos-literais-vs-funcoes-construtoras/"
+      },
+      {
+        "name": "Modularização em Javascript",
+        "duration": 30,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/modularizacao-em-javascript/"
+      },
+      {
+        "name": "Dominando o uso de prototype em JavaScript",
+        "duration": 20,
+        "level": 2,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/dominando-o-uso-de-prototype-em-javascript/"
+      },
+      {
+        "name": "Assegurando a qualidade do seu código JavaScript",
+        "duration": 10,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://tableless.com.br/qualidade-codigo-javascript/"
+      },
+      {
+        "name": "JSON, de gambiarra a padrão",
+        "duration": 15,
+        "level": 1,
+        "type": "Artigo",
+        "url": "http://loopinfinito.com.br/2013/06/18/json-de-gambiarra-a-padrao/"
+      },
+      {
+        "name": "Javascript Idiomático",
+        "duration": 11,
+        "level": 3,
+        "type": "Vídeo",
+        "url": "http://setemasters.imasters.com.br/conversas/javascript-idiomatico/"
+      },
+      {
+        "name": "Arquitetura de Javascript Modular e Event-Driven",
+        "duration": 38,
+        "level": 3,
+        "type": "Vídeo",
+        "url": "https://www.eventials.com/locaweb/arquitetura-de-javascript-modular-e-event-driven/"
+      },
+      {
+        "name": "O fantástico mundo do JavaScript",
+        "duration": 43,
+        "level": 3,
+        "type": "Vídeo",
+        "url": "https://www.youtube.com/watch?v=Zn7B-X0y5qs"
+      }
+    ]
+  },
+  {
+    "slug": "git",
+    "name": "Git",
+    "tags": ["git"],
+    "description": "Utilizando um sistema de controle de versão",
+    "before": ["workflow", "jsintermediario"],
+    "after": [""],
+    "home": "https://git-scm.com/",
+    "links": [
+      {
+        "name": "Git e Github para iniciantes",
+        "duration": 40,
+        "level": 2,
+        "type": "Website",
+        "url": "https://www.youtube.com/watch?v=UMhskLXJuq4"
+      },
+      {
+        "name": "git - guia prático",
+        "duration": 20,
+        "level": 2,
+        "type": "Website",
+        "url": "http://rogerdudler.github.io/git-guide/index.pt_BR.html"
+      }
+    ]
+  }
+]

@@ -41,24 +41,24 @@
     </header>
 
     <main class="container" ng-controller="MainCtrl">
-      <div ng-if="sections.length > 0" ng-repeat="section in sections" ng-cloak>
+      <div ng-if="sections.length > 0" ng-repeat="section in sections track by $index" ng-cloak>
         <h2>{{::section.name}}</h2>
         <ul class="timeline">
-          <li ng-repeat="resource in section.resources">
-            <div ng-class="resource.section % 2 === 0 ? 'direction-r' : 'direction-l'">
+          <li ng-repeat="resource in section.links track by $index">
+            <div ng-class="$parent.$index % 2 === 0 ? 'direction-r' : 'direction-l'">
               <div class="flag-wrapper">
                 <div class="flag">
                   <div class="checkbox">
-                    <input type="checkbox" id="{{::resource._id}}" name="{{::resource._id}}" ng-model="resource.checked"/>
-                    <label for="{{::resource._id}}" ng-click="changeResource(resource)"></label>
+                    <input type="checkbox" id="{{::resource.url}}" name="{{::resource.url}}" ng-model="resource.checked"/>
+                    <label for="{{::resource.url}}" ng-click="changeResource(resource)"></label>
                   </div>
-                  <a class="title" ng-href="{{::resource.url}}" ng-title="{{::resource.title}}" target="_blank">{{::resource.title}}</a>
+                  <a class="title" ng-href="{{::resource.url}}" ng-title="{{::resource.name}}" target="_blank">{{::resource.name}}</a>
                 </div>
                 <span class="time-wrapper"><span class="time" ng-bind="getTime(resource.duration)"></span></span>
               </div>
               <!--<div class="desc"></div>-->
             </div>
-          </li>  
+          </li>
         </ul>
       </div>
     </main>
