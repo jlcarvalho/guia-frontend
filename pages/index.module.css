@@ -1,0 +1,16 @@
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.title {
+  margin-bottom: 100px;
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}

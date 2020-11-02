@@ -1,0 +1,24 @@
+.time-wrapper {
+  color: rgb(255,255,255);
+  display: inline;
+  line-height: 1em;
+  font-size: 0.66666em;
+  vertical-align: middle;
+}
+
+.time-wrapper--left {
+  float: left;
+  margin-left: -1px;
+}
+
+.time-wrapper--right {
+  float: right;
+  margin-right: -1px;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(80,80,80);
+  transition: all ease .2s;
+}

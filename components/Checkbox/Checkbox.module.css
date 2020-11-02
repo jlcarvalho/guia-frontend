@@ -1,0 +1,110 @@
+
+/* ================ Checkboxes ================ */
+
+@-webkit-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 10px;
+  }
+  50% {
+    height: 20px;
+    width: 10px;
+  }
+}
+@-moz-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 10px;
+  }
+  50% {
+    height: 20px;
+    width: 10px;
+  }
+}
+@-ms-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 10px;
+  }
+  50% {
+    height: 20px;
+    width: 10px;
+  }
+}
+@keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 10px;
+  }
+  50% {
+    height: 20px;
+    width: 10px;
+  }
+}
+.checkbox {
+  background-color: rgb(230,230,230);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+.checkbox label, .checkbox-alt label {
+  cursor:pointer;
+  display: block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+.checkbox label:after, .checkbox-alt label:after {
+  /*
+  This element has a border on the right, and top. By rotating it looks like a check symbol, but the wrong way. That's why I'm flipping it with scaleX(-1)
+  */
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  /*
+  I want to position the symbol using the left top, because when increasing the width and height of an object, it expands from the top left corner as well. That is what makes it looks like it's being drawn.
+  */
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 4px solid rgba(255,80,80,.3);
+  border-top: 4px solid rgba(255,80,80,.3);
+  content: '';
+  display: block;
+  height: 20px;
+  left: 14px;
+  position: absolute;
+  top: 26px;
+  width: 10px;
+}
+.checkbox label:hover:after, .checkbox-alt label:hover:after {
+  border-color: rgba(255,80,80,.75);
+}
+.checkbox input, .checkbox-alt input {
+  display: none;
+}
+.checkbox input:checked + label:after, .checkbox-alt input:checked + label:after {
+  -webkit-animation: check 0.8s;
+  -moz-animation: check 0.8s;
+  -o-animation: check 0.8s;
+  animation: check 0.8s;
+  border-color: #34b93d;
+}

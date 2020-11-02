@@ -1,0 +1,269 @@
+.direction-left, .direction-right {
+  position: relative;
+  width: 300px;
+}
+
+.direction-left {
+  float: left;
+  text-align: right;
+}
+
+.direction-right {
+  float: right;
+}
+
+/* ================ The Timeline ================ */
+
+.timeline {
+  position: relative;
+  width: 100%;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-left {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-right {
+  position: relative;
+  width: 300px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+}
+
+.flag {
+  display: flex;
+  position: relative;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: left;
+  transition: all ease .2s;
+}
+
+.flag-wrapper:hover .flag {
+  color: rgb(250,80,80);
+}
+
+.direction-left .flag {
+  box-shadow: -1px 1px 1px rgba(80,80,80,0.15), 0 0 1px rgba(80,80,80,0.15);
+  border-radius: 5px 5px 5px 0;
+}
+
+.direction-right .flag {
+  box-shadow: 1px 1px 1px rgba(80,80,80,0.15), 0 0 1px rgba(80,80,80,0.15);
+  border-radius: 5px 5px 0 5px;
+}
+
+.direction-left .flag:before,
+.direction-right .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
+}
+
+.direction-right .flag:before {
+  left: -40px;
+}
+
+.direction-left .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-right .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.flag .title {
+  max-width: calc(100% - 64px);
+  margin-left: 14px;
+}
+
+.flag-wrapper:hover .time {
+  background: rgb(250,80,80);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.direction-right .desc {
+  margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+  .timeline {
+    width: 100%;
+    padding: 4em 0 4em 0;
+  }
+
+  .timeline li {
+    padding: 2em 0;
+  }
+
+  .direction-left,
+  .direction-right {
+    float: none;
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .flag-wrapper {
+    text-align: center;
+  }
+
+  .flag {
+    background: rgb(255,255,255);
+    text-align: center;
+    z-index: 15;
+  }
+
+  .direction-left .flag:before,
+  .direction-right .flag:before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-left: -9px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(255,80,80);
+    z-index: 10;
+  }
+
+  .direction-left .flag:after,
+  .direction-right .flag:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    height: 0;
+    width: 0;
+    margin-left: -8px;
+    border: solid transparent;
+    border-bottom-color: rgb(255,255,255);
+    border-width: 8px;
+    pointer-events: none;
+  }
+
+  .time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+
+  .direction-left .time-wrapper {
+    float: none;
+    margin-left: -1px;
+  }
+
+  .direction-right .time-wrapper {
+    float: none;
+    margin-right: -1px;
+  }
+
+  .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background: rgb(245,245,245);
+    box-shadow: 0 0 1px rgba(0,0,0,0.20);
+
+    z-index: 15;
+  }
+
+  .direction-left .desc,
+  .direction-right .desc {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+
+    z-index: 15;
+  }
+
+}
+
+/* @media screen and (min-width: 400px ?? max-width: 660px) {
+  .direction-left .desc,
+  .direction-right .desc {
+    margin: 1em 4em 0 4em;
+  }
+} */

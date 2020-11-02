@@ -2,3 +2,5 @@ node_modules
 .tmp
 .sass-cache
 bower_components
+.next
+.history
