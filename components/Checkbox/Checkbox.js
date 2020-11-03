@@ -1,9 +1,9 @@
 import styles from './Checkbox.module.css'
 
-import useLocalStorage from '../../hooks/useLocalStorage'
+import { useStorage } from '../../lib/contexts/StorageContext'
 
 const Checkbox = ({ url }) => {
-  const [urls, setUrl] = useLocalStorage('ngStorage-done', []);
+  const [urls, setUrl] = useStorage()
 
   return (
     <div className={styles.checkbox}>

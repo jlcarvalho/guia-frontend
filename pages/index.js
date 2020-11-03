@@ -3,6 +3,8 @@ import styles from './index.module.css'
 
 import data from '../data/data.json';
 
+import { StorageProvider } from '../lib/contexts/StorageContext';
+
 import Section from '../components/Section/Section';
 
 export default function Home() {
@@ -37,6 +39,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.container}>
+          <StorageProvider>
           {
             data.map((item, index) =>
               <Section
@@ -46,6 +49,7 @@ export default function Home() {
               />
             )
           }
+          </StorageProvider>
         </div>
       </main>
 
