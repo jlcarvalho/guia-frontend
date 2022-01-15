@@ -1,17 +1,28 @@
 {
   "name": "guia-frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install",
+    "lint": "next lint"
   },
   "dependencies": {
-    "date-fns": "^2.16.1",
-    "next": "10.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-ga": "^3.2.0"
+    "date-fns": "^2.28.0",
+    "next": "12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": ">=10",
+    "prettier": "^2.5.1"
   }
 }
