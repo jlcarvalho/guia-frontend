@@ -1,27 +1,43 @@
-import Head from 'next/head'
-import styles from './index.module.css'
+import Head from "next/head";
+import styles from "./index.module.css";
 
-import data from '../data/data.json';
+import data from "../data/data.json";
 
-import { StorageProvider } from '../lib/contexts/StorageContext';
+import { StorageProvider } from "../lib/contexts/StorageContext";
 
-import Section from '../components/Section/Section';
+import Section from "../components/Section/Section";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>guia front end em português</title>
-        <meta name="description" content="Guia (altamente opinativo) para iniciantes no desenvolvimento front end organizado de forma sequencial semelhante as tracks do bento.io." />
+        <meta
+          name="description"
+          content="Guia (altamente opinativo) para iniciantes no desenvolvimento front end organizado de forma sequencial semelhante as tracks do bento.io."
+        />
         <meta name="viewport" content="width=device-width" />
 
-        <meta property="og:title" content="guia front end em português"/>
-        <meta property="og:url" content="http://jlcarvalho.github.io/guia-frontend/" />
+        <meta property="og:title" content="guia front end em português" />
+        <meta
+          property="og:url"
+          content="http://jlcarvalho.github.io/guia-frontend/"
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Guia (altamente opinativo) para iniciantes no desenvolvimento front end organizado de forma sequencial semelhante as tracks do bento.io." />
-        <meta property="og:image" content="http://jlcarvalho.github.io/guia-frontend/images/logo.png" />
+        <meta
+          property="og:description"
+          content="Guia (altamente opinativo) para iniciantes no desenvolvimento front end organizado de forma sequencial semelhante as tracks do bento.io."
+        />
+        <meta
+          property="og:image"
+          content="http://jlcarvalho.github.io/guia-frontend/images/logo.png"
+        />
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css' />
+        <link
+          href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
 
       <header>
@@ -29,10 +45,27 @@ export default function Home() {
           <h1 className={styles.title}>guia front end em português</h1>
 
           <div className={styles.description}>
-            <p>Este guia é voltado para iniciantes no desenvolvimento front end e possui seu conteúdo organizado de forma sequencial de tal forma que você conseguirá aprender de forma iterativa incremental, ou seja, começará do básico e irá aprofundando seus conhecimentos através de ciclos onde novos conteúdos serão introduzidos.</p>
+            <p>
+              Este guia é voltado para iniciantes no desenvolvimento front end e
+              possui seu conteúdo organizado de forma sequencial de tal forma
+              que você conseguirá aprender de forma iterativa incremental, ou
+              seja, começará do básico e irá aprofundando seus conhecimentos
+              através de ciclos onde novos conteúdos serão introduzidos.
+            </p>
             <hr />
-            <p>Existem materiais incríveis em português, basta saber onde procurar, e, por isso, nós os organizamos para quem está começando.</p>
-            <p>Isso quer dizer que não preciso aprender inglês? <strong>NÃO</strong>! O domínio da língua inglesa é de extrema importância na área de desenvolvimento. A maior parte dos recursos disponíveis na web estão em inglês e sempre que você precisar se aprofundar um pouco mais em determinado assunto acabará esbarrando no idioma.</p>
+            <p>
+              Existem materiais incríveis em português, basta saber onde
+              procurar, e, por isso, nós os organizamos para quem está
+              começando.
+            </p>
+            <p>
+              Isso quer dizer que não preciso aprender inglês?{" "}
+              <strong>NÃO</strong>! O domínio da língua inglesa é de extrema
+              importância na área de desenvolvimento. A maior parte dos recursos
+              disponíveis na web estão em inglês e sempre que você precisar se
+              aprofundar um pouco mais em determinado assunto acabará esbarrando
+              no idioma.
+            </p>
           </div>
         </div>
       </header>
@@ -40,15 +73,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.container}>
           <StorageProvider>
-          {
-            data.map((item, index) =>
+            {data.map((item, index) => (
               <Section
                 key={item.slug}
-                align={index % 2 === 0 ? 'right' : 'left'}
+                align={index % 2 === 0 ? "right" : "left"}
                 {...item}
               />
-            )
-          }
+            ))}
           </StorageProvider>
         </div>
       </main>
@@ -62,5 +93,5 @@ export default function Home() {
         />
       </a>
     </div>
-  )
+  );
 }
