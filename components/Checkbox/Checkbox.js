@@ -1,9 +1,9 @@
-import styles from './Checkbox.module.css'
+import styles from "./Checkbox.module.css";
 
-import { useStorage } from '../../lib/contexts/StorageContext'
+import { useStorage } from "../../lib/contexts/StorageContext";
 
 const Checkbox = ({ url }) => {
-  const [urls, setUrl] = useStorage()
+  const [urls, setUrl] = useStorage();
 
   return (
     <div className={styles.checkbox}>
@@ -14,8 +14,8 @@ const Checkbox = ({ url }) => {
         checked={urls.includes(url)}
         onChange={({ target: { checked } }) => setUrl({ url, checked })}
       />
-      <label htmlFor={url} ></label>
+      <label htmlFor={url}></label>
     </div>
-  )
-}
-export default Checkbox
+  );
+};
+export default Checkbox;
