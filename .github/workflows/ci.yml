@@ -1,0 +1,18 @@
+name: CI
+on: [push]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.18
+
+      - name: Install node dependencies
+        run: yarn install
+
+      - name: Run linter
+        run: yarn lint
