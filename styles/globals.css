@@ -21,8 +21,6 @@ a {
   text-decoration: none;
 }
 
-hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #fff}
-
 h1, h2 {
   text-align: center;
 }
@@ -36,33 +34,18 @@ p {
   font-size: 14px;
 }
 
-header {
-  background: url(/images/bg640.png) no-repeat center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
 @media screen and (min-width: 640px) {
-  header {
-    background: url(/images/bg1280.png) no-repeat center center;
-  }
-
   p {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  header {
-    background: url(/images/bg.png) no-repeat center center;
-  }
 
   p {
     font-size: 18px;
   }
 }
-
 
 hr {
   margin-top: 20px;

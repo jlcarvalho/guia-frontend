@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import styles from "./index.module.css";
 
 import data from "../data/data.json";
@@ -34,35 +35,45 @@ export default function Home() {
         />
       </Head>
 
-      <header>
-        <div className={styles.container}>
-          <h1 className={styles.title}>guia front end em português</h1>
-
-          <div className={styles.description}>
-            <p>
-              Este guia é voltado para iniciantes no desenvolvimento front end e
-              possui seu conteúdo organizado de forma sequencial de tal forma
-              que você conseguirá aprender de forma iterativa incremental, ou
-              seja, começará do básico e irá aprofundando seus conhecimentos
-              através de ciclos onde novos conteúdos serão introduzidos.
-            </p>
-            <hr />
-            <p>
-              Existem materiais incríveis em português, basta saber onde
-              procurar, e, por isso, nós os organizamos para quem está
-              começando.
-            </p>
-            <p>
-              Isso quer dizer que não preciso aprender inglês?{" "}
-              <strong>NÃO</strong>! O domínio da língua inglesa é de extrema
-              importância na área de desenvolvimento. A maior parte dos recursos
-              disponíveis na web estão em inglês e sempre que você precisar se
-              aprofundar um pouco mais em determinado assunto acabará esbarrando
-              no idioma.
-            </p>
-          </div>
+      <div className={styles.header}>
+        <div className={styles.headerBgWrapper}>
+          <img
+            alt="Background"
+            src="images/bg.png"
+            className={styles.headerBg}
+          />
         </div>
-      </header>
+        <header>
+          <div className={styles.container}>
+            <h1 className={styles.title}>guia front end em português</h1>
+
+            <div className={styles.description}>
+              <p>
+                Este guia é voltado para iniciantes no desenvolvimento front end
+                e possui seu conteúdo organizado de forma sequencial de tal
+                forma que você conseguirá aprender de forma iterativa
+                incremental, ou seja, começará do básico e irá aprofundando seus
+                conhecimentos através de ciclos onde novos conteúdos serão
+                introduzidos.
+              </p>
+              <hr />
+              <p>
+                Existem materiais incríveis em português, basta saber onde
+                procurar, e, por isso, nós os organizamos para quem está
+                começando.
+              </p>
+              <p>
+                Isso quer dizer que não preciso aprender inglês?{" "}
+                <strong>NÃO</strong>! O domínio da língua inglesa é de extrema
+                importância na área de desenvolvimento. A maior parte dos
+                recursos disponíveis na web estão em inglês e sempre que você
+                precisar se aprofundar um pouco mais em determinado assunto
+                acabará esbarrando no idioma.
+              </p>
+            </div>
+          </div>
+        </header>
+      </div>
 
       <main className={styles.main}>
         <div className={styles.container}>

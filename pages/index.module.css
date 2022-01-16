@@ -4,6 +4,27 @@
   padding: 50px;
 }
 
+.header {
+  width: 100vw;
+  overflow: hidden;
+  height: auto;
+  color: #fff;
+  position: relative;
+}
+
+.headerBgWrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.headerBg {
+  object-fit: cover;
+  display: block;
+  min-width: 100%;
+}
+
 .title {
   margin-bottom: 100px;
 }
