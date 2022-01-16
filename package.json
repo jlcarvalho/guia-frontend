@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "lint": "next lint",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages --dotfiles --dist out"
   },
   "dependencies": {
     "date-fns": "^2.28.0",
