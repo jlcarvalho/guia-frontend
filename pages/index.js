@@ -32,12 +32,6 @@ export default function Home() {
           property="og:image"
           content="https://jlcarvalho.github.io/guia-frontend/images/logo.png"
         />
-
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
-          rel="stylesheet"
-          type="text/css"
-        />
       </Head>
 
       <header>
