@@ -1,4 +1,7 @@
+const isProd = process.env.NODE_ENV === "production";
+const prefix = isProd ? "/guia-frontend" : "";
+
 module.exports = {
-  basePath: "/guia-frontend",
-  assetPrefix: "/guia-frontend/",
+  basePath: prefix,
+  assetPrefix: prefix,
 };
