@@ -14,8 +14,10 @@ jobs:
         with:
           node-version: 14.18
 
-      - name: Setup project
+      - name: Install node dependencies
         run: yarn install
+
+      - name: Run linter
         run: yarn lint
 
       - name: Deploy
