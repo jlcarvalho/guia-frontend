@@ -8,7 +8,7 @@
     "start": "next start",
     "prepare": "husky install",
     "lint": "next lint",
-    "predeploy": "yarn build && touch out/.nojekyll",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
