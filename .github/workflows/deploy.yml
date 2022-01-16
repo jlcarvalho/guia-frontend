@@ -20,6 +20,9 @@ jobs:
       - name: Run linter
         run: yarn lint
 
+      - name: Build
+        run: yarn build
+
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
