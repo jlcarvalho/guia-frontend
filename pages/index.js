@@ -21,7 +21,7 @@ export default function Home() {
         <meta property="og:title" content="guia front end em português" />
         <meta
           property="og:url"
-          content="http://jlcarvalho.github.io/guia-frontend/"
+          content="https://jlcarvalho.github.io/guia-frontend/"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -30,11 +30,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="http://jlcarvalho.github.io/guia-frontend/images/logo.png"
+          content="https://jlcarvalho.github.io/guia-frontend/images/logo.png"
         />
 
         <link
-          href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
           rel="stylesheet"
           type="text/css"
         />
